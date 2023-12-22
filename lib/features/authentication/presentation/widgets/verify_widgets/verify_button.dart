@@ -28,7 +28,7 @@ class VerifyButton extends StatelessWidget {
           label,
           maxLines: 1,
           style: TextStyle(
-              color: AppColors.whiteBackground,
+              color: AppColors.darkBlue,
               fontSize: responsive.sp(20),
               fontWeight: FontWeight.w500),
         ),

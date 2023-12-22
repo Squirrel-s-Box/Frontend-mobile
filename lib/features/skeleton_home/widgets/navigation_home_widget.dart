@@ -7,6 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 part 'bottom_bar.dart';
+
 part 'floating_action_bottom.dart';
 
 class NavigationHomeWidget extends StatelessWidget {
@@ -16,7 +17,13 @@ class NavigationHomeWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     final selectedPageProvider = Provider.of<SelectedPageProvider>(context);
     return Scaffold(
-      body: selectedPageProvider.currentPage,
+      body: Container(
+        margin: const EdgeInsets.only(bottom: 30),
+        padding: const EdgeInsets.only(top: 30, left: 20, right: 20),
+        width: double.infinity,
+        height: double.infinity,
+        child: selectedPageProvider.currentPage,
+      ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       floatingActionButton: const _FloatingActionBottom(),
       bottomNavigationBar: const BottomBar(),

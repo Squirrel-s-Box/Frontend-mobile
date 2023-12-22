@@ -7,7 +7,7 @@ import 'package:cajardilla/features/skeleton_home/widgets/principal_page.dart';
 import 'package:flutter/material.dart';
 
 class AppRoutes {
-  static const initialRoute = 'verify_phone';
+  static const initialRoute = 'principal';
 
   static Map<String, Widget Function(BuildContext)> routes =
   {

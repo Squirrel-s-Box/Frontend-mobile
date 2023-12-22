@@ -3,8 +3,10 @@ import 'package:flutter/material.dart';
 
 class AppTheme {
   static final ThemeData lightTheme = ThemeData.light().copyWith(
+
     primaryColor: AppColors.midOrange,
     hintColor: AppColors.placeholderColor,
+
     textTheme: ThemeData.light().textTheme.copyWith(
           displayLarge: const TextStyle(
             color: AppColors.darkBlue,
