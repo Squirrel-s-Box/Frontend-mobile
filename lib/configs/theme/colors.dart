@@ -9,4 +9,5 @@ class AppColors{
   static const Color whiteBackground = Color(0xFFFFFFFF);
   static const Color placeholderColor = Color(0xFF7C7C7C);
   static const Color cofeeCapuchino = Color(0xFF7A5635);
+  static const Color cartoon = Color(0xFFDE8E44);
 }

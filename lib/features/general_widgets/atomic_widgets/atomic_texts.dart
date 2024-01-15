@@ -37,7 +37,8 @@ class SecondaryTitle extends StatelessWidget {
 
 class NormalText extends StatelessWidget {
   final String title;
-  const NormalText({super.key, required this.title});
+  bool isBold = false;
+  NormalText({super.key, required this.title, this.isBold = false});
 
   @override
   Widget build(BuildContext context) {
@@ -45,7 +46,7 @@ class NormalText extends StatelessWidget {
     return AutoSizeText(title, style: GoogleFonts.openSans(
       fontSize: responsive.sp(17),
       color: AppColors.darkBlue,
-      fontWeight: FontWeight.normal
+      fontWeight: isBold ? FontWeight.bold : FontWeight.normal
     ),);
   }
 }
